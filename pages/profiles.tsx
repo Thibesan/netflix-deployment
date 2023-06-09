@@ -28,7 +28,7 @@ const Profiles = () => {
 	const selectedProfile = useCallback(() => {
 		router.push('/')
 		
-	}, [])
+	}, [router])
 
 	return (
 		<div className="flex items-center justify-center h-full">

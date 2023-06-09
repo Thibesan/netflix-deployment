@@ -1,8 +1,8 @@
-import useSWR from 'SWR'
+import useSWR from 'swr'
 import fetcher from '../lib/fetcher'
 
 const useCurrentUser = () => {
-    //SWR will prevent refetching of existing data, removes need for React Redux w/ state management
+    //swr will prevent refetching of existing data, removes need for React Redux w/ state management
     const { data, error, isLoading, mutate } = useSWR('/api/current', fetcher)
     
     return {
